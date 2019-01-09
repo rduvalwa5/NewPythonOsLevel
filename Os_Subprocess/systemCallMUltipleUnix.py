@@ -1,7 +1,7 @@
 '''
 Created on Dec 24, 2018
 
-@author: rduvalwa2
+https://stackoverflow.com/questions/20042205/python-call-multiple-commands
 '''
 
 '''

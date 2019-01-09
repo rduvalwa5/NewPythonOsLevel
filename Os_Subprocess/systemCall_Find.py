@@ -1,26 +1,23 @@
 '''
-Created on Dec 24, 2018
-
-@author: rduvalwa2
-'''
-'''
 Created on Dec 23, 2018
+
 https://docs.python.org/3/library/subprocess.html
-@author: rduvalwa2
 
-subprocess.run(args, *, stdin=None, input=None, stdout=None, stderr=None, capture_output=False, shell=False, cwd=None, 
-timeout=None, check=False, encoding=None, errors=None, text=None, env=None, universal_newlines=None)¶
+#!/path/to/interpreter
+OSXAir:Os_Subprocess rduvalwa2$ python3.7 systemCall_Find.py ./  testFile.txt
+call is  systemCall_Find.py ./ testFile.txt
+.//testFile.txt
+OSXAir:Os_Subprocess rduvalwa2$ 
+'''
+#!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
 
-'''
-import os, subprocess
-
-print("Shell Find command using subprocess")
-subprocess.run(["find", "/etc/", "-name", "hosts"])
-print("Shell Find command using os.system")
-os.system("find /etc/ -name hosts")
-'''
-If you use one ampersand it sends that cmd off to its own thread, and immediately begins the next cmd on another thread. 
-I wanted to sleep before executing something and so needed to use: os.system("sleep 5 && <some command>"). NOTE the two 
-ampersands
-'''
-os.system("ls -l && cd /Users/ && pwd && ls -l")
+if __name__ == "__main__":
+    import os, subprocess, sys
+    
+    print(subprocess.run(["ls", "-l"], capture_output=True) )   
+    print("call is ", sys.argv[0], sys.argv[1], sys.argv[2] )
+    subprocess.run(["find", sys.argv[1], "-name",sys.argv[2]])
+    print(subprocess.run(["find", sys.argv[1], "-name",sys.argv[2]]))
+    
+    subprocess.run(["ls", "-l", "/dev/null"], capture_output=True)               
+                
