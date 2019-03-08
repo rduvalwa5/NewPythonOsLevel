@@ -5,4 +5,9 @@ Created on Dec 23, 2018
 '''
 import os
 
-print("this ",os.system("./bashScript.sh"))
+print("this os is ", os.name)
+if os.name == 'nt':
+    print("found nt!")
+    print("this ",os.system("bashScript.sh"))
+    os.system("bashScriptWindows.sh")
+

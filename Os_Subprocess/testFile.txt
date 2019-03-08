@@ -1,9 +1,5 @@
-The quick brown fox jumped over the lazy white hound dog.This is a file to test code with.
-The quick brown fox jumped over the lazy white hound dog.This is a file to test code with.
-The quick brown fox jumped over the lazy white hound dog.This is a file to test code with.
-The quick brown fox jumped over the lazy white hound dog.This is a file to test code with.
-The quick brown fox jumped over the lazy white hound dog.This is a file to test code with.
-The quick brown fox jumped over the lazy black hound dog.This is a file to test code with.
-The quick brown fox jumped over the lazy black hound dog.This is a file to test code with.
+The quick brown fox jumped over the lazy white hound dog.This is a file to test code with.'Test filler'  
+'\nTest filler'  
+'Test filler2'  
 The quick brown fox jumped over the lazy black hound dog.This is a file to test code with.
 The quick brown fox jumped over the lazy black hound dog.This is a file to test code with.
