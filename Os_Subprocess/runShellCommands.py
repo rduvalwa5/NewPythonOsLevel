@@ -20,6 +20,12 @@ stdout=b'crw-rw-rw- 1 root root 1, 3 Jan 23 16:23 /dev/null\n', stderr=b'')
 '''
 import os, subprocess
 
+'''
+args
+The arguments used to launch the process. This may be a list or a string.
+
+'''
+
 subprocess.run(["ls","-l"])
 subprocess.run(["ls", "-l", "/dev/null"], capture_output=True)
 subprocess.run(["find", "/etc/", "-name", "hosts"])
